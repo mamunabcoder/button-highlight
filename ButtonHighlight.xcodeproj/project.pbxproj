@@ -15,6 +15,7 @@
 		89F0C4BB22964C7E00475C8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F0C4BA22964C7E00475C8D /* main.m */; };
 		89F0C4C522964C7E00475C8D /* ButtonHighlightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F0C4C422964C7E00475C8D /* ButtonHighlightTests.m */; };
 		89F0C4D022964C7E00475C8D /* ButtonHighlightUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F0C4CF22964C7E00475C8D /* ButtonHighlightUITests.m */; };
+		89F0C4DF22966F9A00475C8D /* AudioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F0C4DE22966F9A00475C8D /* AudioButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		89F0C4CB22964C7E00475C8D /* ButtonHighlightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonHighlightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F0C4CF22964C7E00475C8D /* ButtonHighlightUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonHighlightUITests.m; sourceTree = "<group>"; };
 		89F0C4D122964C7E00475C8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89F0C4DD22966F9A00475C8D /* AudioButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioButton.h; sourceTree = "<group>"; };
+		89F0C4DE22966F9A00475C8D /* AudioButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				89F0C4AC22964C7C00475C8D /* AppDelegate.m */,
 				89F0C4AE22964C7C00475C8D /* ViewController.h */,
 				89F0C4AF22964C7C00475C8D /* ViewController.m */,
+				89F0C4DD22966F9A00475C8D /* AudioButton.h */,
+				89F0C4DE22966F9A00475C8D /* AudioButton.m */,
 				89F0C4B122964C7C00475C8D /* Main.storyboard */,
 				89F0C4B422964C7E00475C8D /* Assets.xcassets */,
 				89F0C4B622964C7E00475C8D /* LaunchScreen.storyboard */,
@@ -264,6 +269,7 @@
 			files = (
 				89F0C4B022964C7C00475C8D /* ViewController.m in Sources */,
 				89F0C4BB22964C7E00475C8D /* main.m in Sources */,
+				89F0C4DF22966F9A00475C8D /* AudioButton.m in Sources */,
 				89F0C4AD22964C7C00475C8D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,14 +441,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 94753NKWW7;
 				INFOPLIST_FILE = ButtonHighlight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bjitgroup.ButtonHighlight;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bjit.ButtonHighlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "BJIT Generic Development Provisioning Profile";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -451,14 +460,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 94753NKWW7;
 				INFOPLIST_FILE = ButtonHighlight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bjitgroup.ButtonHighlight;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bjit.ButtonHighlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "BJIT Generic Development Provisioning Profile";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
